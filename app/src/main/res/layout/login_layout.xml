@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,16 +8,80 @@
     tools:context=".LoginActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/baseline_accessible_forward"
-        android:hint="Usuário">
+        android:layout_margin="10dp"
+        android:hint="@string/usu_rio"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_accessible_forward">
+
         <com.google.android.material.textfield.TextInputEditText
-            android:inputType="textPersonName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="50" />
     </com.google.android.material.textfield.TextInputLayout>
 
-</LinearLayout
-    >
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_admin_panel_settings">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="insira um texto"
+        app:helperText="Digite seu nome"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="50" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="insira um texto"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:helperText="Digite seu nome"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/baseline_add_alert"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cadastrar"
+        app:icon="@drawable/baseline_add_alert"/>
+</LinearLayout>
