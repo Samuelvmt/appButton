@@ -84,4 +84,9 @@
         android:layout_height="wrap_content"
         android:text="cadastrar"
         app:icon="@drawable/baseline_add_alert"/>
+<com.google.android.material.progressindicator.LinearProgressIndicator
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:indeterminate="true"/>
+
 </LinearLayout>
