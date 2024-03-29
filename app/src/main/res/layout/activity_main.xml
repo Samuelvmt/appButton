@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Shared"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/baseline_share"
+        app:iconGravity="start" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Favorite"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/baseline_favorite"
+        app:iconGravity="end" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNotification"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Notification"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/baseline_add_alert"
+        app:iconGravity="start" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEmail"
+        style="@style/Widget.Material3.Button.IconButton.Outlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/baseline_email"
+        app:iconGravity="start" />
+</LinearLayout>
